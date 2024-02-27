@@ -25,6 +25,23 @@ You should know Makefile and linkerscript syntax
 For more details, refer to the [startup.c](https://github.com/NaderMohamed325/IEEE--Task/blob/main/Stm32/startup.c) and [linker.ld](https://github.com/NaderMohamed325/IEEE--Task/blob/main/Stm32/linker.ld) files.
 
 ### Installation
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/NaderMohamed325/IEEE--Task.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd IEEE--Task
+    ```
+
+3. Build the project using make:
+
+    ```bash
+    make all
+    ```
 
 
 
