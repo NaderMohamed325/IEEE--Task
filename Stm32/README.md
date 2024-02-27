@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the startup code for [STM32 ARM CORTEX-4] Linkerscript and startupcode]. The startup code initializes the microcontroller, sets up the vector table, and performs essential setup tasks before transferring control to the main application.
+This repository contains the startup code for [STM32 ARM CORTEX-4 Linkerscript and startupcode]. The startup code initializes the microcontroller, sets up the vector table, and performs essential setup tasks before transferring control to the main application.
 
 ## Table of Contents
 
