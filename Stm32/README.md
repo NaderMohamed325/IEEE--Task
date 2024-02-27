@@ -19,6 +19,6 @@ This repository contains the startup code for [STM32 ARM CORTEX-4 Linkerscript a
 ### Prerequisites
 
 You should know Makefile and linkerscript syntax
-For more details, refer to the [startup.c](./path/to/your/repo/startup.c) file.
+For more details, refer to the [startup.c](Stm32/startup.c) file.
 
 
