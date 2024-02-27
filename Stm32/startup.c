@@ -12,7 +12,7 @@ extern uint32_t _edata;
 extern uint32_t _sbss;
 extern uint32_t _sdata;
 
-void main(void);
+extern void main(void);
 void Default_Handler(void){
     while(1);
 }
