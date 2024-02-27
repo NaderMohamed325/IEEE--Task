@@ -9,17 +9,22 @@ This repository contains the startup code for [STM32 ARM CORTEX-4 Linkerscript a
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+
+
 
 ## Getting Started
 
 ### Prerequisites
 
+Make sure you have the following tools installed on your system:
+
+- [Arm GNU Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
+
+
 You should know Makefile and linkerscript syntax
 For more details, refer to the [startup.c](https://github.com/NaderMohamed325/IEEE--Task/blob/main/Stm32/startup.c) and [linker.ld](https://github.com/NaderMohamed325/IEEE--Task/blob/main/Stm32/linker.ld) files.
+
+### Installation
 
 
 
