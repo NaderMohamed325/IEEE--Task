@@ -26,7 +26,7 @@ void My_String(unsigned char *The_char) {
 int main(void) {
     clock_init();
     lcd_init();
-    while (1) {
+    while (1) {g
         My_String("Hello I'm Nader");
 
         My_String("This is me from IEEE");
