@@ -59,4 +59,11 @@ The STM32F103C8 is a member of the STM32F1 series of microcontrollers from STMic
 - [Make Tool](https://gnuwin32.sourceforge.net/packages/make.htm)
 3. **Finally:**
       #### Use any text editor to begin
+You should know Makefile and linkerscript syntax For more details, refer to the [startup.c](https://github.com/NaderMohamed325/IEEE--Task/blob/main/BluePill/startup.c) and [linker.ld](https://github.com/NaderMohamed325/IEEE--Task/blob/main/BluePill/linker.ld) files.
 
+***Hint***
+  
+ ***DONT FORGET TO CHANGE ARM ARCH FROM A MAKE_FILE***
+
+
+***Adios***
