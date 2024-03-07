@@ -17,7 +17,7 @@ Welcome to the IEEE Embedded System Tasks repository! This collection of tasks a
 Before you begin, ensure you have the following:
 
 - STM32 development board (e.g., Bluepill)
-- Neoclu IDE installed
+- STM32 IDE installed or basic toolchain info
 - Toolchain for STM32 development (e.g., GCC for ARM)
 
 
