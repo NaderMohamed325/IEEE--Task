@@ -1,4 +1,4 @@
-# IEEE Embedded System Tasks README
+# IEEE Embedded System Tasks
 ![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/b95fa064-9f2f-41f5-a433-6e03c3e5c2cd)
 
 ## Overview
