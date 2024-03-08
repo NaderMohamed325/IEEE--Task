@@ -11,7 +11,7 @@ Welcome to the STM32F103C8 Blue Pill README! This document provides key specific
  - [STM32F103C8 Specs](#STM32F103C8-Specs)
  - [Vector Table](#Vector-Table)
  - [Memory Layout](#Memory-Layout)
- - [Ready?](#Ready?)
+ - [Ready ?](#Ready-?)
 
 ### STM32F103C8 Specs
 The STM32F103C8 is a member of the STM32F1 series of microcontrollers from STMicroelectronics. Below are the key specifications for the STM32F103C8 microcontroller:
@@ -52,7 +52,8 @@ The STM32F103C8 is a member of the STM32F1 series of microcontrollers from STMic
 #### Hint: Stack start —> 0x20002800
 ![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/0e02d363-d651-4f5e-b0e3-d9b026f2fab2)
 
-### Ready?
+
+### Ready ?
 1. **Download ARM Tollchain:**
 - [ARM Toll Chain](https://developer.arm.com/downloads/-/gnu-rm)
 2. **Download Make Tool:**
