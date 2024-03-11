@@ -2,7 +2,8 @@
 
 ## 🔴🤞🔵🙏🟣 
 
-![STM32F103C8 Blue Pill](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/dd6eea7f-2558-4cf5-add9-12b690f3b61d)
+![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/c12a4b15-9894-4bb9-909f-e810836c8f0e)
+
 
 Welcome to the STM32F103C8 Blue Pill README! This document provides key specifications for the STM32F103C8 microcontroller, commonly known as the Blue Pill. Whether you're a hobbyist or a professional embedded systems developer, this information will help you understand the capabilities of this microcontroller.
 
