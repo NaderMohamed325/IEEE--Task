@@ -18,8 +18,11 @@ Stm32_F103C6_GPIO.o: Stm32_F103C6_GPIO.c
 startup.o: startup.c
 	@$(CC) $(CFLAGS) $^ -o $@
 
+
+
 executable.elf: startup.o main.o Stm32_F103C6_GPIO.o lcd.o
 	@$(CC) $(LDFLAGS) $^ -o $@
+
 
 all: startup.o main.o Stm32_F103C6_GPIO.o lcd.o  executable.elf
 

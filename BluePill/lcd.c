@@ -10,7 +10,7 @@
 #include "lcd.h"
 #include "stm32f103x6.h"
 #include "Stm32_F103C6_GPIO.h"
-GPIO_PIN_CONFIG_T PinCfg ;
+ GPIO_PIN_CONFIG_T PinCfg ;
 static void delay_ms(uint32_t delay)
 {
 	uint32_t i, j;
