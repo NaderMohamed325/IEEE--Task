@@ -3,7 +3,7 @@
 
 ## Overview
 
-Welcome to the IEEE Embedded System Tasks repository! This collection of tasks and projects is designed to deepen your understanding of embedded systems, focusing on platforms such as STM32 (using Neoclu) and Bluepill. In this set of tasks, you will be working on blinking LEDs using Neoclu and interfacing an LCD with a Bluepill board. These exercises cater to both beginners and experienced developers, providing valuable hands-on experience.
+Welcome to the IEEE Embedded System Tasks repository! This collection of tasks and projects is designed to deepen your understanding of embedded systems, focusing on platforms such as STM32 (using Neoclu) and Bluepill. In this set of tasks, you will be working on blinking LEDs using Neoclu and interfacing an LCD with a Bluepill board and much more in future. 
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ Welcome to the IEEE Embedded System Tasks repository! This collection of tasks a
 
    - [Task 1: Blinking LED with Neoclu](#task-1-blinking-led-with-neoclu)
    - [Task 2: LCD Interface with Bluepill](#task-2-lcd-interface-with-bluepill)
-
+   - [Cooking......]
 
 
 Before you begin, ensure you have the following:

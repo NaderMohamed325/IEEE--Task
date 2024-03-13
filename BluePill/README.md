@@ -34,7 +34,7 @@ The STM32F103C8 is a member of the STM32F1 series of microcontrollers from STMic
    - CAN (Controller Area Network)
 
 5. **Supply Voltage:**
-    - 2.0V to 3.6V
+    - 3.0V3to 5.5V
 
 6. **Operating Frequency:**
     - Up to 72 MHz
