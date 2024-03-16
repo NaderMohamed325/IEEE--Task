@@ -1,4 +1,4 @@
-# Liked List
+# Linked List
 
 ![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/95c57d57-8019-49b0-b2dc-f3d26b4d80ad)
 
