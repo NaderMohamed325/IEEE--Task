@@ -32,3 +32,7 @@ Unlike arrays, linked lists do not allow direct access to elements by index. Tra
 **Extra Memory**:
 
 Linked lists require additional memory for storing the pointers, compared to arrays.
+
+
+
+### For more details visit [GeeksforGeeks](https://www.geeksforgeeks.org/what-is-linked-list/)
