@@ -8,23 +8,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-char* readline();
+char *readline();
 
 typedef struct SinglyLinkedListNode SinglyLinkedListNode;
 typedef struct SinglyLinkedList SinglyLinkedList;
 
-struct SinglyLinkedListNode {
+struct SinglyLinkedListNode
+{
     int data;
-    SinglyLinkedListNode* next;
+    SinglyLinkedListNode *next;
 };
 
-struct SinglyLinkedList {
-    SinglyLinkedListNode* head;
-    SinglyLinkedListNode* tail;
+struct SinglyLinkedList
+{
+    SinglyLinkedListNode *head;
+    SinglyLinkedListNode *tail;
 };
 
-SinglyLinkedListNode* create_singly_linked_list_node(int node_data) {
-    SinglyLinkedListNode* node = malloc(sizeof(SinglyLinkedListNode));
+SinglyLinkedListNode *create_singly_linked_list_node(int node_data)
+{
+    SinglyLinkedListNode *node = malloc(sizeof(SinglyLinkedListNode));
 
     node->data = node_data;
     node->next = NULL;
@@ -32,33 +35,42 @@ SinglyLinkedListNode* create_singly_linked_list_node(int node_data) {
     return node;
 }
 
-void insert_node_into_singly_linked_list(SinglyLinkedList** singly_linked_list, int node_data) {
-    SinglyLinkedListNode* node = create_singly_linked_list_node(node_data);
+void insert_node_into_singly_linked_list(SinglyLinkedList **singly_linked_list, int node_data)
+{
+    SinglyLinkedListNode *node = create_singly_linked_list_node(node_data);
 
-    if (!(*singly_linked_list)->head) {
+    if (!(*singly_linked_list)->head)
+    {
         (*singly_linked_list)->head = node;
-    } else {
+    }
+    else
+    {
         (*singly_linked_list)->tail->next = node;
     }
 
     (*singly_linked_list)->tail = node;
 }
 
-void print_singly_linked_list(SinglyLinkedListNode* node, char* sep, FILE* fptr) {
-    while (node) {
+void print_singly_linked_list(SinglyLinkedListNode *node, char *sep, FILE *fptr)
+{
+    while (node)
+    {
         fprintf(fptr, "%d", node->data);
 
         node = node->next;
 
-        if (node) {
+        if (node)
+        {
             fprintf(fptr, "%s", sep);
         }
     }
 }
 
-void free_singly_linked_list(SinglyLinkedListNode* node) {
-    while (node) {
-        SinglyLinkedListNode* temp = node;
+void free_singly_linked_list(SinglyLinkedListNode *node)
+{
+    while (node)
+    {
+        SinglyLinkedListNode *temp = node;
         node = node->next;
 
         free(temp);
@@ -77,54 +89,58 @@ void free_singly_linked_list(SinglyLinkedListNode* node) {
  *
  */
 
-int cmpfunc(const void *a, const void *b) {
-    return (*(int *) a - *(int *) b);
+int cmpfunc(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
 }
 
-
-
-int Listsize(SinglyLinkedListNode *point) {
+int Listsize(SinglyLinkedListNode *point)
+{
     int size = 0;
-    while (point != NULL) {
+    while (point != NULL)
+    {
         size++;
-        point = (SinglyLinkedListNode *) point->next;
+        point = (SinglyLinkedListNode *)point->next;
     }
     return size;
 }
 
-
-SinglyLinkedListNode* mergeLists(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2) {
+SinglyLinkedListNode *mergeLists(SinglyLinkedListNode *head1, SinglyLinkedListNode *head2)
+{
     int size = Listsize(head1) + Listsize(head2);
     int a[size];
     int index = 0;
 
-
-    for (int i = 0; head1 != NULL; ++i) {
+    for (int i = 0; head1 != NULL; ++i)
+    {
         a[index++] = head1->data;
         head1 = head1->next;
     }
 
-   
-    for (int i = index; head2 != NULL; ++i) {
+    for (int i = index; head2 != NULL; ++i)
+    {
         a[index++] = head2->data;
         head2 = head2->next;
     }
 
     qsort(a, size, sizeof(int), cmpfunc);
 
-  
-    SinglyLinkedListNode* mergedList = NULL;
-    SinglyLinkedListNode* tail = NULL;
+    SinglyLinkedListNode *mergedList = NULL;
+    SinglyLinkedListNode *tail = NULL;
 
-    for (int i = 0; i < size; ++i) {
-        SinglyLinkedListNode* newNode = (SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
+    for (int i = 0; i < size; ++i)
+    {
+        SinglyLinkedListNode *newNode = (SinglyLinkedListNode *)malloc(sizeof(SinglyLinkedListNode));
         newNode->data = a[i];
         newNode->next = NULL;
 
-        if (mergedList == NULL) {
+        if (mergedList == NULL)
+        {
             mergedList = newNode;
             tail = newNode;
-        } else {
+        }
+        else
+        {
             tail->next = newNode;
             tail = newNode;
         }
@@ -133,59 +149,76 @@ SinglyLinkedListNode* mergeLists(SinglyLinkedListNode* head1, SinglyLinkedListNo
     return mergedList;
 }
 
-
 int main()
 {
-    FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
+    FILE *fptr = fopen(getenv("OUTPUT_PATH"), "w");
 
-    char* tests_endptr;
-    char* tests_str = readline();
+    char *tests_endptr;
+    char *tests_str = readline();
     int tests = strtol(tests_str, &tests_endptr, 10);
 
-    if (tests_endptr == tests_str || *tests_endptr != '\0') { exit(EXIT_FAILURE); }
+    if (tests_endptr == tests_str || *tests_endptr != '\0')
+    {
+        exit(EXIT_FAILURE);
+    }
 
-    for (int tests_itr = 0; tests_itr < tests; tests_itr++) {
-        SinglyLinkedList* llist1 = malloc(sizeof(SinglyLinkedList));
+    for (int tests_itr = 0; tests_itr < tests; tests_itr++)
+    {
+        SinglyLinkedList *llist1 = malloc(sizeof(SinglyLinkedList));
         llist1->head = NULL;
         llist1->tail = NULL;
 
-        char* llist1_count_endptr;
-        char* llist1_count_str = readline();
+        char *llist1_count_endptr;
+        char *llist1_count_str = readline();
         int llist1_count = strtol(llist1_count_str, &llist1_count_endptr, 10);
 
-        if (llist1_count_endptr == llist1_count_str || *llist1_count_endptr != '\0') { exit(EXIT_FAILURE); }
+        if (llist1_count_endptr == llist1_count_str || *llist1_count_endptr != '\0')
+        {
+            exit(EXIT_FAILURE);
+        }
 
-        for (int i = 0; i < llist1_count; i++) {
-            char* llist1_item_endptr;
-            char* llist1_item_str = readline();
+        for (int i = 0; i < llist1_count; i++)
+        {
+            char *llist1_item_endptr;
+            char *llist1_item_str = readline();
             int llist1_item = strtol(llist1_item_str, &llist1_item_endptr, 10);
 
-            if (llist1_item_endptr == llist1_item_str || *llist1_item_endptr != '\0') { exit(EXIT_FAILURE); }
+            if (llist1_item_endptr == llist1_item_str || *llist1_item_endptr != '\0')
+            {
+                exit(EXIT_FAILURE);
+            }
 
             insert_node_into_singly_linked_list(&llist1, llist1_item);
         }
-      
-      	SinglyLinkedList* llist2 = malloc(sizeof(SinglyLinkedList));
+
+        SinglyLinkedList *llist2 = malloc(sizeof(SinglyLinkedList));
         llist2->head = NULL;
         llist2->tail = NULL;
 
-        char* llist2_count_endptr;
-        char* llist2_count_str = readline();
+        char *llist2_count_endptr;
+        char *llist2_count_str = readline();
         int llist2_count = strtol(llist2_count_str, &llist2_count_endptr, 10);
 
-        if (llist2_count_endptr == llist2_count_str || *llist2_count_endptr != '\0') { exit(EXIT_FAILURE); }
+        if (llist2_count_endptr == llist2_count_str || *llist2_count_endptr != '\0')
+        {
+            exit(EXIT_FAILURE);
+        }
 
-        for (int i = 0; i < llist2_count; i++) {
-            char* llist2_item_endptr;
-            char* llist2_item_str = readline();
+        for (int i = 0; i < llist2_count; i++)
+        {
+            char *llist2_item_endptr;
+            char *llist2_item_str = readline();
             int llist2_item = strtol(llist2_item_str, &llist2_item_endptr, 10);
 
-            if (llist2_item_endptr == llist2_item_str || *llist2_item_endptr != '\0') { exit(EXIT_FAILURE); }
+            if (llist2_item_endptr == llist2_item_str || *llist2_item_endptr != '\0')
+            {
+                exit(EXIT_FAILURE);
+            }
 
             insert_node_into_singly_linked_list(&llist2, llist2_item);
         }
 
-        SinglyLinkedListNode* llist3 = mergeLists(llist1->head, llist2->head);
+        SinglyLinkedListNode *llist3 = mergeLists(llist1->head, llist2->head);
 
         char *sep = " ";
 
@@ -200,30 +233,42 @@ int main()
     return 0;
 }
 
-char* readline() {
+char *readline()
+{
     size_t alloc_length = 1024;
     size_t data_length = 0;
-    char* data = malloc(alloc_length);
+    char *data = malloc(alloc_length);
 
-    while (true) {
-        char* cursor = data + data_length;
-        char* line = fgets(cursor, alloc_length - data_length, stdin);
+    while (true)
+    {
+        char *cursor = data + data_length;
+        char *line = fgets(cursor, alloc_length - data_length, stdin);
 
-        if (!line) { break; }
+        if (!line)
+        {
+            break;
+        }
 
         data_length += strlen(cursor);
 
-        if (data_length < alloc_length - 1 || data[data_length - 1] == '\n') { break; }
+        if (data_length < alloc_length - 1 || data[data_length - 1] == '\n')
+        {
+            break;
+        }
 
         size_t new_length = alloc_length << 1;
         data = realloc(data, new_length);
 
-        if (!data) { break; }
+        if (!data)
+        {
+            break;
+        }
 
         alloc_length = new_length;
     }
 
-    if (data[data_length - 1] == '\n') {
+    if (data[data_length - 1] == '\n')
+    {
         data[data_length - 1] = '\0';
     }
 
@@ -231,5 +276,3 @@ char* readline() {
 
     return data;
 }
-
-

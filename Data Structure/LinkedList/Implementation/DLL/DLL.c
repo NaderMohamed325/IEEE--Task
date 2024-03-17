@@ -1,6 +1,4 @@
-//
-// Created by xcite on 10/15/2023.
-//
+
 
 #include "DLL.h"
 
