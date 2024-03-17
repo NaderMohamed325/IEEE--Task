@@ -20,11 +20,17 @@ Ease of Insertion/Deletion: The insertion and deletion of elements are simpler t
 
 **Efficient Memory Utilization**:
 
+![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/3d2f24a8-71d4-4e44-b954-ce94bfb772c8)
+
+
 As we know Linked List is a dynamic data structure the size increases or decreases as per the requirement so this avoids the wastage of memory. 
 Implementation: Various advanced data structures can be implemented using a linked list like a stack, queue, graph, hash maps, etc.
 
 
 ## Disadvantages of Linked Lists
+
+![emoji-holy-moly](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/691891f3-0a48-4b63-ac25-3e6be55c9760)
+
 **Random Access**:
 
 Unlike arrays, linked lists do not allow direct access to elements by index. Traversal is required to reach a specific node.
