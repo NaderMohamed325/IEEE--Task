@@ -1,4 +1,35 @@
-# Linked List
+# Data Structure and Algorithm
+
+
+A data structure is a way of organizing and storing data in a computer so that it can be accessed and manipulated efficiently. It defines a specific format for organizing and storing data, along with operations that can be performed on that data. Data structures are essential in computer science because they provide a means to manage and manipulate large amounts of data effectively
+
+## Big-O complexities of common Data structure & Algorithm
+![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/eb8ad381-5cf1-46ef-b478-a217482e2863)
+
+![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/69d04bb2-7b9d-40bb-b70a-b61db66fe898)
+
+![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/2faffffd-bf44-4658-a33c-7fb7bb75e9c5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Linked List
 
 ![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/95c57d57-8019-49b0-b2dc-f3d26b4d80ad)
 
@@ -10,7 +41,7 @@ is a linear data structure, in which elements are not stored at a contiguous loc
 **Next Pointer**: It stores the memory address (reference) of the next node in the sequence.
 **Head and Tail**: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
 
-## Why linked list data structure needed?
+### Why linked list data structure needed?
 
 **Dynamic Data structure**:
 
@@ -27,7 +58,7 @@ As we know Linked List is a dynamic data structure the size increases or decreas
 Implementation: Various advanced data structures can be implemented using a linked list like a stack, queue, graph, hash maps, etc.
 
 
-## Disadvantages of Linked Lists
+### Disadvantages of Linked Lists
 
 ![emoji-holy-moly](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/691891f3-0a48-4b63-ac25-3e6be55c9760)
 
