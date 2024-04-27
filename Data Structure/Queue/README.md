@@ -1,7 +1,7 @@
 
 # Queue Implementation in C
 
-This repository contains a C implementation of a queue data structure. It includes a simple queue implemented with an array, as well as a queue implemented using two stacks.
+This repository contains a C implementation of a queue data structure. It includes a circular queue implemented with dynamic memory allocation, as well as a queue implemented using two stacks.
 
 ## Simple Queue 
 
