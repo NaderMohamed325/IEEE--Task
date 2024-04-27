@@ -5,6 +5,9 @@ This repository contains a C implementation of a queue data structure. It includ
 
 ## Simple Queue 
 
+![image](https://github.com/NaderMohamed325/IEEE--Task/assets/112278447/c7a82481-3854-4a53-8946-4026fa9cfccf)
+
+
 ### Functions:
 
 1. `Create_Queue(unsigned int size)`
