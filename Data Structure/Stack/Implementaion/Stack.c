@@ -97,3 +97,23 @@ void Destroy(Stack *stack){
     free(stack->array);
     free(stack);
 }
+
+/**
+ * @brief Checks if the stack is empty.
+ *
+ * @param stack Pointer to the stack.
+ * @return 1 if the stack is empty, 0 otherwise.
+ */
+int isEmpty(Stack *stack) {
+    return stack->top == -1;
+}
+
+/**
+ * @brief Checks if the stack is full.
+ *
+ * @param stack Pointer to the stack.
+ * @return 1 if the stack is full, 0 otherwise.
+ */
+int isFull(Stack *stack) {
+    return stack->top == stack->max - 1;
+}

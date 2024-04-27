@@ -59,4 +59,20 @@ int peek(Stack *stack);
  */
 void Destroy(Stack *stack);
 
+
+/**
+ * @brief Checks if the stack is empty.
+ *
+ * @param stack Pointer to the stack.
+ * @return 1 if the stack is empty, 0 otherwise.
+ */
+int isEmpty(Stack *stack) ;
+/**
+ * @brief Checks if the stack is full.
+ *
+ * @param stack Pointer to the stack.
+ * @return 1 if the stack is full, 0 otherwise.
+ */
+int isFull(Stack *stack) ;
+
 #endif //STACK_STACK_H

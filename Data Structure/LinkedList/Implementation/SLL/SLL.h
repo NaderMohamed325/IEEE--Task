@@ -1,5 +1,6 @@
 #ifndef LINKED_LIST_H
 #define LINKED_LIST_H
+
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -13,7 +14,7 @@
  */
 struct node {
     int data;          ///< Data stored in the node.
-    struct node* next; ///< Pointer to the next node in the list.
+    struct node *next; ///< Pointer to the next node in the list.
 };
 
 /**
