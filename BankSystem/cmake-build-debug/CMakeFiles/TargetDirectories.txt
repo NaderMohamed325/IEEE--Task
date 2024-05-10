@@ -1,3 +1,0 @@
-C:/Users/xcite/OneDrive/Desktop/IEEE_task/BankSystem/cmake-build-debug/CMakeFiles/Project.dir
-C:/Users/xcite/OneDrive/Desktop/IEEE_task/BankSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/xcite/OneDrive/Desktop/IEEE_task/BankSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
